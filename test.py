@@ -7,6 +7,7 @@ import tempfile
 import sys
 import nbformat
 import doctest
+import glob
 
 if sys.version_info >= (3,0):
     kernel = 'python3'
@@ -14,7 +15,7 @@ else:
     kernel = 'python2'
 
 # Note we leave out the python intro as there are purposeful exceptions
-notebooks = [""]
+notebooks = glob.glob("*.ipynb")
 
 def _notebook_run(path):
     """Execute a notebook via nbconvert and collect output.
