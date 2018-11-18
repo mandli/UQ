@@ -1,3 +1,8 @@
+# Jupyter Notebook specific
+.ipynb_checkpoints/*
+*.slides.html
+*template.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
